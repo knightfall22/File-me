@@ -1,0 +1,90 @@
+.header{
+    height: 85vh;
+}
+
+.navbar{
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    background-color : var(--grey-dark-4);
+    color: var(--grey-light-1);
+
+
+
+    &__header{
+        font-size: 2rem;
+        font-weight: 400;
+        font-style: italic;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        text-decoration: none;
+        color: currentColor;
+        transition: all .5s;
+        &:hover{
+            color: var( --grey-dark-3);
+        }
+    }
+
+    &__right{
+        list-style: none;
+        display: flex;
+        align-self: stretch;
+
+            &>* {
+                display: flex;
+                height: 100%;
+                align-items: center;
+                padding: 0 1rem;
+            }
+    }
+    &__item{
+        transition: all .5s;
+        &:not(:last-of-type){
+            margin-right: 3rem;
+        }
+        &:hover {
+            color: var( --grey-dark-3);
+            // background-color: #0b131ad4;
+        }
+
+        &-icon-box{
+            margin-right: .5rem;
+        }
+
+        &-icon {
+            height: 1.5rem;
+            width: 1.5rem;
+            fill: currentColor;
+            
+        }
+        
+    }
+    &__link{
+        font-size: 1.25rem;
+        text-decoration: none;
+        color: currentColor;
+        text-transform: uppercase;
+
+  
+
+    }
+}
+
+.jumbotron{
+    height: 78vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7) ),
+    url('../img/home.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+ }
+
+ .footer{
+     padding: 10rem 0;
+     background-color: var(--grey-dark-4);
+ }
+
+ .body{
+     padding: 15rem 0; 
+ }
